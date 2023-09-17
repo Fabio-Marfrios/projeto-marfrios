@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marfrios</title>
+    <link rel="shortcut icon" href="./img/marfrios.ico" type="image/x-icon">
+   <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+<!-- Inicio do menu !-->
+<header>  
+        
+<nav>  
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+      </script>
+    
+      <input type="checkbox" id="chec">
+      <label for="chec">
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+      </label>
+      <div class="bg"></div>
+      <nav id="principal">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li id="sub10">
+                <a href="#">Contatos<span>+</span></a>
+                <nav id="obras">
+                    <ul>
+                        <li ><a href="#">E-mail</a></li>
+                        <li ><a href="#">Instagram</a></li>
+                        <li ><a href="#">Telefone</a></li>
+                        <li ><a href="#">WhasApp</a></li>                        
+                    </ul>
+                </nav>
+            </li>          
+            <li id="sub10">
+                <a href="#">Produtos<span>+</span></a>
+                <nav id="obras">
+                    <ul>
+                        <li ><a href="#">Açaí</a></li>
+                        <li ><a href="#">Açougue</a></li>
+                        <li ><a href="#">Bebidas</a></li>
+                        <li ><a href="#">Churrasco</a></li>
+                        <li ><a href="#">Sorvetes</a></li>
+                        <li ><a href="#">Higiene Pessoal</a></li>
+                        <li ><a href="#">Limpeza</a></li>
+                    </ul>
+                </nav>
+            </li>
+            <li><a href="#">Promoções</a></li>
+            <li><a href="#">Novidades</a></li>
+        </ul>
+</nav>
+<picture>
+    <source media="(max-width: 600px )" srcset="./img/marfrios-logo-pp.png" type="image/png">    
+    <img src="./img/marfrios-logo-pp.png" alt="logo do Marfios">
+</picture>
+    </header>
+    
+    <main>
+         <p>Os melhores produtos com os melhores preços você encontra aqui!</p>      
+            <div class="catalogo-principal">
+                <img src="./img/acai-m.jpg" alt="Açaí">
+                <img src="./img/acougue-m.jpg" alt="Açougue">
+                <img src="./img/bebidas-m.jpg" alt="Bebidas">
+                <img src="./img/churrasco-m.jpg" alt="Churrasco">
+                <img src="./img/mercado-m.jpg" alt="Mercado">
+                <img src="./img/sorvete-m.jpg" alt="Sorvete">
+                <img src="./img/higiene-m.jpg" alt="Higiene Pessoal">
+                <img src="./img/limpeza-m.jpg" alt="Produtos de limpeza">
+            </div>
+        
+    </main>
+
+    <footer>
+
+    </footer>    
+</body>
+</html>

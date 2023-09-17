@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+*:root{
+    --cor0: #f6f6f6;
+    --cor1: #ffec7457;
+    --cor2: #ffdd6c;
+    --cor3: #facb09;
+    --cor4: #d19600;
+    --cor5: #000000;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte-padrao);
+}
+body{
+    background-color: var(--cor0);
+    border: 10px solid var(--cor5); 
+}
+p{
+    margin: 20px;
+}
+
+header{
+    background-color: var(--cor5);
+    min-height: 50px;
+    max-height: 120px;
+    min-width: 200px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+
+
+}
+
+header  img{    
+margin-left: 42.5%;
+}
+
+
+ul {
+    list-style: none;
+}
+
+/* Inicio do css icone do menu hamburguer */
+.container {      
+    margin: -15px 0px 0px -10px;
+    
+    display: inline-block;
+    cursor: pointer;
+    
+}
+
+.bar1,
+.bar2,
+.bar3 {
+   
+    width: 35px;
+    height: 5px;
+    background-color: var(--cor4);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    background-color: var(--cor4);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    background-color: var(--cor4);
+}
+
+/* Fim do css do icone do menu hamburguer */
+
+/* Inicio Menu hamburguer */
+
+#chec {
+    display: none;
+    /* esconde o checkbox */
+}
+
+#chec:checked ~ #principal {
+    transform: translateX(100%);
+    /* Faz o menu aparecer e reaparecer */
+}
+
+#chec:checked ~ .bg {
+    display: block;
+}
+
+
+
+#principal {
+    background-color: rgba(110, 110, 110, 0.5);
+    /* cor do fundo do menu */
+    width: 200px;
+    height: 100vh;
+    /* unidade base do viewport, pega 100% da pagina */
+    left: -200px;
+    position: absolute;
+    transition: all .4s;
+    /* Faz a transição/animação do menu */
+}
+
+#obras {
+    background-color: rgba(110, 110, 110, 0.5);
+    /* cor do fundo do sub-menu */
+    /* width: 14%; */
+    height: 100vh;
+    /* unidade base do viewport, pega 100% da pagina */
+    left: -100%;
+    transition: all .4s;
+    position: relative;
+    /* Faz a transição/animação do menu */
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    padding: 20px 5px;
+    color: white;
+}
+
+a:hover {
+    /* hover do menu */
+    background-color: rgb(176, 224, 230);
+    color: black;
+}
+
+label {
+    padding: 5px;
+    margin: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+ul {
+    top: 70px;
+    position: absolute;
+    width: 100%
+}
+
+ul li span {
+    float: right;
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .4);
+    display: none;
+}
+
+/* Fim Menu hamburguer */
+
+#sub10 #obras {
+    top: -70px;
+    position: absolute;
+    width: 170px;
+    pointer-events: none;
+}
+
+#sub10:hover #obras {
+    left: 100%;
+    pointer-events: initial
+}
+
+#sub10 {
+    overflow: hidden;
+    height: 66px;
+}
+
+nav {  
+    text-align: left;
+    background-color: var(--cor5);      
+    position: relative;
+    box-shadow: -1px -1px 20px 0px rgba(0, 0, 0, 0.308)
+}
+
+nav > a{
+    font-weight: 800;
+    text-align: left;    
+    text-decoration: none;
+    font-weight: bold;
+    padding-top: 10px;
+    margin: 5px;
+    color: var(--cor0);
+    position: relative;
+   
+}
+a:hover{
+    font-weight: bold;
+    background-color: var(--cor3);
+    color: var(--cor5);
+    padding: 10px;
+    border-radius: 5px;    
+    margin: 0px;
+    transition: 1s;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.397);
+}
+
+
+main{
+   
+}
+main > p{
+    text-align: center;
+    margin: 20px;
+    font-size: 1.2em;
+    font-weight:600;
+}
+
+div{       
+    text-align: center;   
+    padding-left: 10px;
+ 
+    
+     
+}
+
+.catalogo-principal img{
+    background-color: var(--cor3);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.527);
+    padding: 5px;
+    
+    
+   
+}
