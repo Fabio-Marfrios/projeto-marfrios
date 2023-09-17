@@ -16,7 +16,7 @@
 }
 body{
     background-color: var(--cor0);
-    border: 10px solid var(--cor5); 
+ 
 }
 p{
     margin: 20px;
@@ -233,8 +233,15 @@ div{
 .catalogo-principal img{
     background-color: var(--cor3);
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.527);
-    padding: 5px;
-    
-    
+    padding: 5px;   
    
+}
+footer{
+    background-color: var(--cor5);
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 20px;
+    padding: 1px;
+       
 }
